@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JooModss Executor - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Crown and Logo Section -->
+            <div class="logo-section">
+                <!-- Crown SVG -->
+                <div class="crown-container">
+                    <svg class="crown-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L3 5l4 3 4-6 4 6 4-3-2 11H5z" fill="url(#crownGradient)" stroke="none"/>
+                        <defs>
+                            <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <!-- Leaf decorative elements -->
+                    <div class="leaf-decoration left">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.06.82C6.16 17.4 9 11.1 17 8z" fill="currentColor"/>
+                            <path d="M3.82 21.34C5.9 16.17 8 10 17 8s16.17 5.9 21.34 3.82l.82 1.06C17.4 6.16 11.1 9 8 17z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="leaf-decoration right">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.06.82C6.16 17.4 9 11.1 17 8z" fill="currentColor"/>
+                            <path d="M3.82 21.34C5.9 16.17 8 10 17 8s16.17 5.9 21.34 3.82l.82 1.06C17.4 6.16 11.1 9 8 17z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="brand-section">
+                    <div class="brand-secure">
+                        <img src="https://github.com/Joodev65.png" alt="Logo" class="profile-logo">
+                        <span class="secure-text">SECURE</span>
+                    </div>
+                    <h1 class="app-title" data-testid="text-app-title">JooModss Executor</h1>
+                    <p class="app-subtitle" data-testid="text-app-subtitle">made by Joocode Official</p>
+                    <p class="app-description">Powerful Telegram Bot Management System</p>
+                </div>
+            </div>
+            
+            <!-- Login Section -->
+            <div class="login-section">
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="username" name="username" placeholder="Username" required data-testid="input-username">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="password" name="password" placeholder="Password" required data-testid="input-password">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="login-btn" data-testid="button-login">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                            <polyline points="10,17 15,12 10,7"></polyline>
+                            <line x1="15" y1="12" x2="3" y2="12"></line>
+                        </svg>
+                        Log-In
+                    </button>
+                </form>
+                
+                <div class="switch-form">
+                    <p>Don't have an account? <button id="showRegisterBtn" class="switch-btn">Create Account</button></p>
+                </div>
+            </div>
+
+            <!-- Register Section -->
+            <div class="register-section" style="display: none;">
+                <form id="registerForm" class="login-form">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="regUsername" name="regUsername" placeholder="Username" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" id="regEmail" name="regEmail" placeholder="Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="regPassword" name="regPassword" placeholder="Password" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="regConfirmPassword" name="regConfirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
+                        Create Account
+                    </button>
+                </form>
+                
+                <div class="switch-form">
+                    <p>Already have an account? <button id="showLoginBtn" class="switch-btn">Log In</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div>
+                <div class="toast-title"></div>
+                <div class="toast-description"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
